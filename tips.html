@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tips Efisien Water Heater | Air Hangat Kita</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <style>
+    /* =========================================
+   HEADER
+   ========================================= */
+
+    .site-header {
+      width: 100%;
+      background: #f8fbef;
+      padding: 8px 0;
+    }
+
+    .header-content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0 10px;
+    }
+
+    /* LOGO */
+
+    .logo {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 100px !important;
+      height: 100px !important;
+      object-fit: contain;
+    }
+
+    /* BRAND */
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 30px;
+      line-height: 1.1;
+      font-weight: 700;
+      color: #050505;
+    }
+
+    .brand p {
+      margin: 2px 0 0;
+      font-size: 12px;
+      line-height: 1.3;
+      color: #111;
+    }
+
+    /* =========================================
+   NAVBAR
+   ========================================= */
+
+    .navbar {
+      width: 100%;
+      background: #07852f;
+      padding: 0;
+    }
+
+    .nav-content {
+      width: 100%;
+      display: flex;
+      align-items: stretch;
+    }
+
+    /* TOMBOL MENU */
+
+    .nav-content a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 40px;
+      padding: 0 18px;
+
+      color: #ffffff;
+      text-decoration: none;
+
+      font-size: 16px;
+      font-weight: 550;
+
+      border-right: 1px solid rgba(255, 255, 255, 0.15);
+
+      transition: all 0.2s ease;
+    }
+
+    /* MENU AKTIF */
+
+    .nav-content a.active {
+      background: #ffd600;
+      color: #ffffff;
+      border-radius: 50px;
+    }
+
+    /* HOVER */
+
+    .nav-content a:hover {
+      background: #ffd600;
+      color: #000000;
+      border-radius: 50px;
+    }
+
+    /* =========================================
+   TABLET
+   ========================================= */
+
+    @media (max-width: 768px) {
+      .header-content {
+        padding: 15px 20px;
+        gap: 15px;
+      }
+
+      .logo img {
+        width: 50px !important;
+        height: 50px !important;
+      }
+
+      .brand h1 {
+        font-size: 34px;
+      }
+
+      .brand p {
+        font-size: 16px;
+      }
+
+      .nav-content {
+        flex-wrap: wrap;
+      }
+
+      .nav-content a {
+        min-height: 50px;
+        padding: 0 14px;
+        font-size: 15px;
+      }
+    }
+
+    /* =========================================
+   HP
+   ========================================= */
+
+    @media (max-width: 480px) {
+      .site-header {
+        padding: 15px 0;
+      }
+
+      .header-content {
+        padding: 0 15px;
+        gap: 10px;
+      }
+
+      .logo img {
+        width: 48px;
+        height: 48px;
+      }
+
+      .brand h1 {
+        font-size: 27px;
+      }
+
+      .brand p {
+        font-size: 13px;
+        line-height: 1.3;
+      }
+
+      /* NAVBAR MENJADI GRID */
+
+      .nav-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+      }
+
+      .nav-content a {
+        min-height: 48px;
+        padding: 8px 5px;
+
+        font-size: 13px;
+        text-align: center;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      }
+    }
+    /* =================================
+   TEKS BERJALAN DI BAWAH NAVBAR
+   BERLAKU UNTUK SEMUA DEVICE
+================================= */
+
+    .running-text {
+      width: 100%;
+      height: 40px;
+
+      background: none;
+      color: #004b1b;
+
+      overflow: hidden;
+      position: relative;
+
+      display: flex;
+      align-items: center;
+    }
+
+    .running-text-content {
+      position: absolute;
+      left: 100%;
+
+      white-space: nowrap;
+
+      font-size: 17px;
+      font-weight: 600;
+
+      animation: teksBerjalan 20s linear infinite;
+    }
+
+    @keyframes teksBerjalan {
+      from {
+        left: 100%;
+      }
+
+      to {
+        left: -100%;
+      }
+    }
+  </style>
+
+  <body>
+    <!-- HEADER -->
+    <div class="header-content">
+      <div class="logo">
+        <img src="Assets/img/AHK-png.png" alt="Logo Air Hangat Kita" />
+      </div>
+
+      <div class="brand">
+        <h1>Air Hangat Kita</h1>
+        <p>Solusi Water Heater Terpercaya untuk Keluarga Anda</p>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="container nav-content">
+        <a href="index.html"> Beranda </a>
+
+        <a href="carakerja.html"> Cara Kerja Water Heater </a>
+
+        <a href="tips.html" class="active"> Tips Efisien </a>
+
+        <a href="perawatan.html"> Perawatan </a>
+      </div>
+    </nav>
+
+    <!-- TEKS BERJALAN -->
+    <div class="running-text">
+      <div class="running-text-content">
+        Air Hangat Kita &nbsp; • &nbsp; Solusi Water Heater Terpercaya &nbsp; •
+        &nbsp; Hangatnya Nyaman, Setiap Hari
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <main class="artikel">
+      <!-- HERO ARTIKEL -->
+      <section class="article-hero">
+        <div class="container">
+          <span class="article-label"> ARTIKEL </span>
+
+          <h2>Tips Penggunaan Water Heater yang Efisien</h2>
+
+          <p>
+            Cara menggunakan water heater secara hemat energi, aman, dan lebih
+            ramah lingkungan.
+          </p>
+        </div>
+      </section>
+
+      <!-- ARTICLE CONTENT -->
+      <section class="article-content">
+        <div class="container">
+          <!-- INTRO -->
+          <div class="article-intro">
+            <p>
+              Penggunaan water heater yang tepat dapat membantu mengurangi
+              konsumsi energi sekaligus menjaga kenyamanan keluarga saat
+              menggunakan air panas.
+            </p>
+
+            <p>
+              Setiap jenis water heater memiliki cara berbeda untuk mencapai
+              efisiensi terbaik. Berikut beberapa tips untuk water heater
+              listrik, gas, dan tenaga surya.
+            </p>
+          </div>
+
+          <!-- WATER HEATER LISTRIK -->
+          <article class="article-section">
+            <div class="section-number">01</div>
+
+            <div class="section-body">
+              <h3>Tips Efisiensi Water Heater Listrik</h3>
+
+              <p>
+                Water heater listrik dapat menggunakan energi cukup besar,
+                terutama pada tipe storage. Pengaturan waktu dan suhu penggunaan
+                menjadi salah satu faktor penting untuk menghemat energi.
+              </p>
+
+              <h4>Tips Penggunaan</h4>
+
+              <ol>
+                <li>
+                  <strong> Gunakan Timer Otomatis </strong>
+
+                  <br />
+
+                  Atur water heater agar hanya menyala pada waktu yang
+                  dibutuhkan, misalnya pagi dan malam. Hindari membiarkan
+                  perangkat menyala terus-menerus sepanjang hari.
+                </li>
+
+                <li>
+                  <strong> Atur Suhu Secara Bijak </strong>
+
+                  <br />
+
+                  Gunakan pengaturan suhu yang sesuai dengan kebutuhan. Suhu
+                  yang terlalu tinggi dapat meningkatkan konsumsi listrik dan
+                  mempercepat terbentuknya kerak pada elemen pemanas.
+                </li>
+
+                <li>
+                  <strong> Matikan Setelah Digunakan </strong>
+
+                  <br />
+
+                  Untuk water heater tipe storage, pertimbangkan untuk mematikan
+                  perangkat apabila tidak akan digunakan dalam waktu yang cukup
+                  lama.
+                </li>
+
+                <li>
+                  <strong> Gunakan Shower </strong>
+
+                  <br />
+
+                  Penggunaan shower dapat membantu mengurangi pemakaian air
+                  panas dibandingkan dengan mengisi bak mandi dalam jumlah
+                  besar.
+                </li>
+
+                <li>
+                  <strong> Periksa dan Bersihkan Elemen Pemanas </strong>
+
+                  <br />
+
+                  Elemen pemanas yang dipenuhi kerak dapat bekerja kurang
+                  optimal dan membutuhkan energi lebih besar. Lakukan
+                  pemeriksaan secara berkala.
+                </li>
+
+                <li>
+                  <strong> Gunakan Isolasi pada Pipa Air Panas </strong>
+
+                  <br />
+
+                  Insulasi pada pipa dapat membantu mengurangi kehilangan panas
+                  selama air mengalir dari water heater menuju keran.
+                </li>
+              </ol>
+
+              <div class="info-box">
+                <strong> Hemat Energi </strong>
+
+                <p>
+                  Mengatur waktu dan suhu penggunaan secara tepat merupakan
+                  langkah sederhana untuk membantu mengurangi konsumsi listrik.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- WATER HEATER GAS -->
+          <article class="article-section">
+            <div class="section-number">02</div>
+
+            <div class="section-body">
+              <h3>Tips Efisiensi Water Heater Gas</h3>
+
+              <p>
+                Efisiensi water heater gas dipengaruhi oleh kondisi burner,
+                ventilasi, jumlah air yang dipanaskan, dan cara penggunaannya.
+              </p>
+
+              <h4>Tips Penggunaan</h4>
+
+              <ol>
+                <li>
+                  <strong> Pertimbangkan Model Instan </strong>
+
+                  <br />
+
+                  Water heater gas instan hanya memanaskan air ketika dibutuhkan
+                  sehingga tidak perlu mempertahankan persediaan air panas dalam
+                  tangki.
+                </li>
+
+                <li>
+                  <strong> Periksa Api Burner </strong>
+
+                  <br />
+
+                  Pastikan burner bekerja dengan baik. Pembakaran yang tidak
+                  sempurna dapat menurunkan efisiensi dan perlu diperiksa oleh
+                  teknisi.
+                </li>
+
+                <li>
+                  <strong> Pastikan Ventilasi Baik </strong>
+
+                  <br />
+
+                  Ventilasi yang baik membantu menyediakan aliran udara yang
+                  diperlukan untuk proses pembakaran serta membantu mengeluarkan
+                  gas hasil pembakaran.
+                </li>
+
+                <li>
+                  <strong> Gunakan Shower Hemat Air </strong>
+
+                  <br />
+
+                  Mengurangi jumlah air panas yang digunakan juga dapat
+                  mengurangi jumlah energi gas yang diperlukan untuk memanaskan
+                  air.
+                </li>
+
+                <li>
+                  <strong> Matikan Gas Saat Tidak Digunakan </strong>
+
+                  <br />
+
+                  Setelah selesai menggunakan perangkat, pastikan sistem gas
+                  berada dalam kondisi aman sesuai petunjuk produsen.
+                </li>
+              </ol>
+
+              <div class="info-box highlight">
+                <strong> Utamakan Keamanan </strong>
+
+                <p>
+                  Jangan mengubah sistem gas atau ventilasi sendiri. Jika
+                  terdapat bau gas atau masalah pada burner, segera hentikan
+                  penggunaan dan hubungi teknisi yang kompeten.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- SOLAR WATER HEATER -->
+          <article class="article-section">
+            <div class="section-number">03</div>
+
+            <div class="section-body">
+              <h3>Tips Efisiensi Water Heater Tenaga Surya</h3>
+
+              <p>
+                Solar water heater memanfaatkan energi matahari sehingga dapat
+                membantu mengurangi penggunaan listrik atau gas. Pemanfaatan
+                energi matahari secara optimal akan membantu meningkatkan
+                efisiensi sistem.
+              </p>
+
+              <h4>Tips Penggunaan</h4>
+
+              <ol>
+                <li>
+                  <strong>
+                    Manfaatkan Air Panas Hasil Pemanasan Siang Hari
+                  </strong>
+
+                  <br />
+
+                  Gunakan air panas pada waktu yang sesuai setelah kolektor
+                  surya mendapatkan energi matahari yang cukup pada siang hari.
+                </li>
+
+                <li>
+                  <strong> Bersihkan Kolektor Surya </strong>
+
+                  <br />
+
+                  Debu, daun, dan kotoran pada permukaan kolektor dapat
+                  mengurangi penyerapan energi matahari. Bersihkan kolektor
+                  secara berkala.
+                </li>
+
+                <li>
+                  <strong> Isolasi Tangki dan Pipa </strong>
+
+                  <br />
+
+                  Gunakan insulasi termal pada tangki dan pipa untuk membantu
+                  mempertahankan suhu air panas lebih lama.
+                </li>
+
+                <li>
+                  <strong> Kurangi Penggunaan Backup </strong>
+
+                  <br />
+
+                  Gunakan pemanas cadangan atau booster ketika energi matahari
+                  tidak mencukupi, misalnya saat cuaca mendung atau hujan dalam
+                  waktu lama.
+                </li>
+
+                <li>
+                  <strong> Gunakan Kapasitas Tangki yang Sesuai </strong>
+
+                  <br />
+
+                  Pilih kapasitas tangki berdasarkan jumlah penghuni dan
+                  kebutuhan air panas. Tangki yang terlalu besar dapat
+                  meningkatkan kehilangan panas apabila air tidak digunakan.
+                </li>
+              </ol>
+
+              <div class="info-box">
+                <strong> Manfaatkan Energi Matahari </strong>
+
+                <p>
+                  Semakin optimal energi matahari dimanfaatkan, semakin kecil
+                  kebutuhan penggunaan pemanas cadangan.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- TIPS UMUM -->
+          <section class="comparison-section">
+            <div class="comparison-header">
+              <span class="article-label"> TIPS UMUM </span>
+
+              <h3>Tips Hemat untuk Semua Jenis Water Heater</h3>
+
+              <p>
+                Kebiasaan sederhana dalam penggunaan sehari-hari dapat membantu
+                menghemat energi dan air panas.
+              </p>
+            </div>
+
+            <div class="sub-section">
+              <ol>
+                <li>
+                  Pilih kapasitas water heater sesuai dengan jumlah penghuni dan
+                  kebutuhan rumah.
+                </li>
+
+                <li>
+                  Matikan atau kurangi aliran air ketika sedang menyabuni tubuh.
+                </li>
+
+                <li>
+                  Pilih water heater yang memiliki fitur penghematan energi
+                  sesuai kebutuhan.
+                </li>
+
+                <li>
+                  Lakukan perawatan secara rutin agar kinerja perangkat tetap
+                  optimal.
+                </li>
+
+                <li>Gunakan air panas secukupnya dan hindari pemborosan.</li>
+              </ol>
+            </div>
+
+            <div class="info-box highlight">
+              <strong> Gunakan Air Panas Secukupnya </strong>
+
+              <p>
+                Efisiensi tidak hanya bergantung pada jenis water heater, tetapi
+                juga pada kebiasaan penggunaannya. Penggunaan air panas secara
+                bijak dapat membantu menghemat energi dan biaya.
+              </p>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <h3>Air Hangat Kita</h3>
+
+          <p>
+            Solusi water heater terpercaya untuk kebutuhan rumah dan bisnis
+            Anda.
+          </p>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Air Hangat Kita. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

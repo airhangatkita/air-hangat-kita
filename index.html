@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Air Hangat Kita - Solusi water heater untuk rumah dan keluarga."
+    />
+
+    <title>Air Hangat Kita</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    
+  </head>
+
+  <body>
+    <!-- TOP INFORMATION BAR -->
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div class="top-info">
+          <div class="top-item">
+            <i class="fa-solid fa-truck"></i
+            ><span><strong>Gratis Ongkir</strong><br />Seluruh Indonesia</span>
+          </div>
+          <div class="top-item">
+            <i class="fa-solid fa-shield-halved"></i
+            ><span><strong>Garansi Resmi</strong><br />Hingga 10 Tahun</span>
+          </div>
+          <div class="top-item">
+            <i class="fa-solid fa-headset"></i
+            ><span
+              ><strong>Layanan Konsultasi</strong><br />09:00 - 17:00 WIB</span
+            >
+          </div>
+        </div>
+        <div class="top-social">
+          <i class="fa-brands fa-instagram"></i
+          ><i class="fa-brands fa-tiktok"></i
+          ><i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="main-header">
+      <div class="container header-main">
+        <a href="#beranda" class="brand">
+          <img src="assets/img/logo-AHK.png" alt="Logo Air Hangat Kita" />
+          <div>
+            <div class="brand-name">
+              <span class="green">AirHangat</span>Kita
+            </div>
+            <div class="brand-tagline">Hangatnya Nyaman, Setiap Hari</div>
+          </div>
+        </a>
+
+        <!--Search Box-->
+        <form class="search-box" onsubmit="return false;">
+          <input
+            type="search"
+            placeholder="Cari produk water heater..."
+            aria-label="Cari produk"
+          />
+          <button type="submit" aria-label="Cari">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+
+        <!--action-->
+        <div class="header-actions">
+          <a href="#contact" class="action"
+            ><i class="fa-regular fa-user"></i><span>Akun</span></a
+          >
+          <a href="#" class="action"
+            ><i class="fa-regular fa-heart"></i><span>Wishlist</span></a
+          >
+          <a href="#produk" class="action cart"
+            ><i class="fa-solid fa-cart-shopping"></i><span>Keranjang</span
+            ><b class="cart-count">0</b></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <div class="nav-wrap">
+      <div class="container">
+        <nav class="navbar" id="navbar">
+          <div class="nav-links">
+            <a href="#beranda" class="active">Beranda</a>
+            <a href="katalog.html"
+              >Katalog Produk
+              <i
+                class="fa-solid fa-chevron-down"
+                style="font-size: 9px; margin-left: 4px"
+              ></i
+            ></a>
+            <a href="carakerja.html">Cara Kerja</a>
+            <a href="tips.html">Tips</a>
+            <a href="perawatan.html">Perawatan</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="artikel.html">Artikel</a>
+            <!--blm ada-->
+            <span class="nav-spacer"></span>
+            <a href="https://wa.me/6282312085979" class="contact-nav"
+              ><i class="fa-brands fa-whatsapp"></i> Hubungi Kami</a
+            >
+          </div>
+          <button
+            class="mobile-toggle"
+            type="button"
+            aria-label="Buka menu"
+            onclick="toggleMenu()"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </nav>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <main id="beranda">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1 class="hero-title">
+              Air Hangat,<br /><span class="green">Hidup Lebih Nyaman</span>
+            </h1>
+            <p class="hero-desc">
+              Water heater berkualitas untuk kehangatan nyaman di rumah Anda dan
+              keluarga.
+            </p>
+            <div class="hero-buttons">
+              <a href="#produk" class="btn btn-yellow"
+                ><i class="fa-solid fa-bag-shopping"></i> Belanja Sekarang</a
+              >
+              <a href="https://wa.me/6282312085979" class="btn btn-outline"
+                ><i class="fa-brands fa-whatsapp"></i> Chat via WhatsApp</a
+              >
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <img
+              class="hero-product"
+              src="Assets/img/Produk AHK.png"
+              alt="Produk Air Hangat Kita"
+              onerror="this.src = 'Assets/img/Elterra.p.png'"
+            />
+          </div>
+
+          <div class="hero-badges">
+            <div class="hero-badge">
+              <i class="fa-solid fa-shield-heart"></i
+              ><span><strong>Produk Original</strong><br />100% Terjamin</span>
+            </div>
+            <div class="hero-badge">
+              <i class="fa-solid fa-shield-halved"></i
+              ><span><strong>Garansi Resmi</strong><br />Hingga 10 Tahun</span>
+            </div>
+            <div class="hero-badge">
+              <i class="fa-solid fa-truck-fast"></i
+              ><span
+                ><strong>Pengiriman Cepat</strong><br />Seluruh Indonesia</span
+              >
+            </div>
+            <div class="hero-badge">
+              <i class="fa-solid fa-headset"></i
+              ><span
+                ><strong>Layanan Konsultasi</strong><br />Gratis & Ramah</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- KATEGORI -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title-row">
+            <h2 class="section-title">Kategori Produk</h2>
+            <a href="#produk" class="see-all"
+              >Lihat Semua <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="category-layout">
+            <div class="categories">
+              <a class="category" href="katalog.html"
+                ><img
+                  src="Assets\img\Water heater instan.png"
+                  alt="Instant Water Heater"
+                /><span>Instant<br />Water Heater</span></a
+              >
+              <a class="category" href="katalog.html"
+                ><img
+                  src="Assets/img/Produk AHK.png"
+                  alt="Storage Water Heater"
+                /><span>Water Heater<br />Listrik & Gas</span></a
+              >
+              <a class="category" href="katalog.html"
+                ><img
+                  src="Assets\img\heat pump.png"
+                  alt="Heat Pump Water Heater"
+                /><span>Pool<br />Heat Pump</span></a
+              >
+              <a class="category" href="katalog.html"
+                ><img
+                  src="Assets/img/solar water heater.png"
+                  alt="Solar Water Heater"
+                /><span>Solar Water<br />Heater</span></a
+              >
+              <a class="category" href="katalog.html"
+                ><img src="Assets\img\plts atap.png" alt="PLTS Atap" /><span
+                  >PLTS Atap<br />/Panel Surya</span
+                ></a
+              >
+            </div>
+
+            <div class="help-card">
+              <img
+                src="assets\img\CS AHK.png"
+                alt="Air Hangat Kita"
+                style="
+                  width: 150px;
+                  height: 150px;
+                  object-fit: contain;
+                  transform: scale(1.5);
+                "
+              />
+              <div>
+                <h3>Butuh Bantuan<br /><span>Memilih Water Heater?</span></h3>
+                <p>
+                  Tim kami siap membantu menemukan produk terbaik sesuai
+                  kebutuhan rumah dan bisnis Anda.
+                </p>
+                <a
+                  href="https://wa.me/6282312085979"
+                  class="btn btn-yellow"
+                  style="min-height: 36px; padding: 0 14px; font-size: 10px"
+                  >Konsultasi Gratis <i class="fa-brands fa-whatsapp"></i
+                ></a>
+                <div class="help-points" style="margin-top: 10px">
+                  <div>
+                    <i class="fa-solid fa-list-check"></i> Rekomendasi Produk
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-diagram-project"></i> Perbandingan
+                    Produk
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-headset"></i> Konsultasi Cepat
+                  </div>
+                  <div><i class="fa-solid fa-check"></i> Sesuai Kebutuhan</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BENEFIT -->
+      <section class="section" style="padding-top: 8px">
+        <div class="container">
+          <div class="benefit-grid">
+            <div class="benefit">
+              <div class="benefit-icon">🌿</div>
+              <div>
+                <h3>Hemat Energi</h3>
+                <p>
+                  Teknologi modern untuk menghemat listrik dan menjaga
+                  lingkungan.
+                </p>
+                <a href="#about">Selengkapnya →</a>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="benefit-icon">🛡️</div>
+              <div>
+                <h3>Aman Digunakan</h3>
+                <p>
+                  Dilengkapi sistem keamanan berlapis untuk perlindungan
+                  maksimal.
+                </p>
+                <a href="#about">Selengkapnya →</a>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="benefit-icon">💧</div>
+              <div>
+                <h3>Air Hangat Stabil</h3>
+                <p>Suhu stabil dan merata untuk kenyamanan seluruh keluarga.</p>
+                <a href="#about">Selengkapnya →</a>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="benefit-icon">🎁</div>
+              <div>
+                <h3>Dapatkan Promo & Info Terbaru!</h3>
+                <p>
+                  Ikuti saluran WhatsApp kami dan dapatkan promo menarik setiap
+                  bulan.
+                </p>
+                <a
+                  href="https://whatsapp.com/channel/0029VbD69A24dTnPxGHKkk3c"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 6px;
+                    background: #25d366;
+                    color: #fff;
+                    padding: 8px 14px;
+                    border-radius: 6px;
+                    text-decoration: none;
+                    font-size: 10px;
+                    font-weight: 600;
+                  "
+                >
+                  <i class="fa-brands fa-whatsapp"></i>
+                  Ikuti Saluran WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICE STRIP -->
+      <section class="section" style="padding-top: 8px">
+        <div class="container">
+          <div class="service-strip">
+            <div class="service">
+              <i class="fa-solid fa-truck-fast"></i>
+              <div>
+                <strong>Gratis Ongkir</strong
+                ><span>Min. pembelian tertentu</span>
+              </div>
+            </div>
+            <div class="service">
+              <i class="fa-solid fa-credit-card"></i>
+              <div>
+                <strong>Pembayaran Aman</strong
+                ><span>Metode pembayaran lengkap</span>
+              </div>
+            </div>
+            <div class="service">
+              <i class="fa-solid fa-circle-check"></i>
+              <div>
+                <strong>Garansi Resmi</strong><span>Klaim mudah & cepat</span>
+              </div>
+            </div>
+            <div class="service">
+              <i class="fa-solid fa-headset"></i>
+              <div>
+                <strong>Beli Mudah</strong><span>Via WhatsApp / Online</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEKS BERJALAN -->
+      <div class="brand-marquee">
+        <div class="brand-track">
+          <span>ELTERRA</span>
+          <span>MODENA</span>
+          <span>MIDEA</span>
+          <span>ARISTON</span>
+          <span>HANDAL</span>
+          <span>WASSER</span>
+
+          <!-- Duplikasi untuk animasi berjalan tanpa putus -->
+          <span>ELTERRA</span>
+          <span>MODENA</span>
+          <span>MIDEA</span>
+          <span>ARISTON</span>
+          <span>HANDAL</span>
+          <span>WASSER</span>
+        </div>
+      </div>
+
+      <!-- PRODUK -->
+      <section id="produk" class="products-section">
+        <div class="container">
+          <div class="section-title-row">
+            <h2 class="section-title">Produk Unggulan Kami</h2>
+            <a href="#produk" class="see-all"
+              >Lihat Semua <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card">
+              <img
+                src="Assets/img/water heater listrik.png"
+                alt="Water Heater Listrik"
+              />
+              <span class="product-tag">Hemat</span>
+              <h3>Water Heater Listrik</h3>
+              <p>
+                Solusi praktis dengan pemanasan cepat dan kontrol suhu yang
+                presisi dari berbagai merek ternama.
+              </p>
+              <ul>
+                <li>✔ Pemanasan cepat</li>
+                <li>✔ Kontrol suhu digital</li>
+                <li>✔ Safety system lengkap</li>
+              </ul>
+              <div class="product-bottom">
+                <span class="price">Rp ---</span
+                ><a
+                  href="katalog-listrik.html"
+                  class="btn btn-yellow"
+                  style="min-height: 38px; padding: 0 16px"
+                  >Beli</a
+                >
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="Assets/img/Ariston1.png" alt="Water Heater Gas" />
+              <span class="product-tag">Efisien</span>
+              <h3>Water Heater Gas</h3>
+              <p>
+                Powerful dan ekonomis dengan sistem pemanasan gas yang efisien
+                untuk kebutuhan keluarga.
+              </p>
+              <ul>
+                <li>✔ Kapasitas besar</li>
+                <li>✔ Biaya operasional rendah</li>
+                <li>✔ Auto ignition system</li>
+              </ul>
+              <div class="product-bottom">
+                <span class="price">Rp ---</span
+                ><a
+                  href="katalog-gas.html"
+                  class="btn btn-yellow"
+                  style="min-height: 38px; padding: 0 16px"
+                  >Beli</a
+                >
+              </div>
+            </article>
+            <article class="product-card">
+              <img
+                src="Assets/img/surya.1.jpg"
+                alt="Water Heater Tenaga Surya"
+              />
+              <span class="product-tag">Ramah Lingkungan</span>
+              <h3>Water Heater Tenaga Surya</h3>
+              <p>
+                Solusi hijau dengan energi matahari yang gratis dan
+                berkelanjutan untuk rumah Anda.
+              </p>
+              <ul>
+                <li>✔ Hemat energi</li>
+                <li>✔ Daya tahan panjang</li>
+                <li>✔ Backup sistem elektrik</li>
+              </ul>
+              <div class="product-bottom">
+                <span class="price">Rp ---</span
+                ><a
+                  href="katalog-surya.html"
+                  class="btn btn-yellow"
+                  style="min-height: 38px; padding: 0 16px"
+                  >Beli</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section" style="padding: 60px 0">
+        <div class="container about-grid">
+          <div class="about-copy">
+            <h2>Tentang Air Hangat Kita</h2>
+            <p>
+              Sejak 2010, Air Hangat Kita telah menjadi penyedia solusi pemanas
+              air terpercaya di Indonesia. Kami berkomitmen untuk memberikan
+              produk berkualitas tinggi dengan layanan profesional.
+            </p>
+            <p>
+              Dengan pengalaman lebih dari satu dekade, kami memahami kebutuhan
+              pasar Indonesia dan terus berinovasi untuk memberikan yang terbaik
+              bagi pelanggan kami.
+            </p>
+            <div class="stats">
+              <div class="stat">
+                <strong>10.000+</strong><span>Pelanggan</span>
+              </div>
+              <div class="stat">
+                <strong>10+</strong><span>Tahun Pengalaman</span>
+              </div>
+              <div class="stat">
+                <strong>98%</strong><span>Kepuasan Pelanggan</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img
+              src="Assets/img/ILUSTRASI PEMASANGAN WATER HEATER LISTRIK.png"
+              alt="Ilustrasi pemasangan water heater"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section
+        id="contact"
+        class="section contact-section"
+        style="padding: 55px 0"
+      >
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <h2>Siap Menikmati Air Hangat Setiap Saat?</h2>
+            <p>
+              Hubungi kami sekarang untuk konsultasi gratis dan dapatkan
+              berbagai penawaran spesial.
+            </p>
+            <div class="contact-list">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <strong>Alamat</strong
+                  ><span>Jl. LE. Martadinata, No. 15, Cilacap Selatan</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div><strong>Telepon</strong><span>0282-534515</span></div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div><strong>WhatsApp</strong><span>082312085979</span></div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <strong>Email</strong><span>airhangatkita@gmail.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <h3 style="margin: 0 0 18px; font-size: 21px">Kirim Pesan</h3>
+            <form class="contact-form" id="contactForm">
+              <input
+                type="text"
+                id="nama"
+                placeholder="Nama Lengkap"
+                required
+              />
+
+              <input type="email" id="email" placeholder="Email" required />
+
+              <input
+                type="tel"
+                id="telepon"
+                placeholder="No Telepon / WhatsApp"
+                required
+              />
+
+              <textarea
+                id="pesan"
+                placeholder="Tulis pesan Anda di sini..."
+                required
+              ></textarea>
+
+              <button
+                class="btn"
+                style="background: var(--green); color: #fff; border: 0"
+                type="submit"
+              >
+                <i class="fa-solid fa-paper-plane"></i> Kirim Pesan
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+       <div class="footer-grid">
+
+  <!-- BRAND -->
+  <div>
+    <div class="footer-brand">
+      <img
+        src="Assets/img/AHK-png.png"
+        alt="Logo Air Hangat Kita"
+      />
+      <strong style="font-size: 20px">Air Hangat Kita</strong>
+    </div>
+
+    <p>
+      Menyediakan solusi water heater terbaik untuk rumah dan bisnis
+      Anda.
+    </p>
+
+    <div class="footer-social">
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-tiktok"></i>
+      <i class="fa-brands fa-youtube"></i>
+    </div>
+  </div>
+
+  <!-- PRODUK -->
+  <div>
+    <h4>Produk</h4>
+    <ul>
+      <li><a href="#produk">Water Heater Listrik</a></li>
+      <li><a href="#produk">Water Heater Gas</a></li>
+      <li><a href="#produk">Water Heater Tenaga Surya</a></li>
+      <li><a href="#produk">PLTS Atap</a></li>
+    </ul>
+  </div>
+
+  <!-- LAYANAN -->
+  <div>
+    <h4>Layanan</h4>
+    <ul>
+      <li>Instalasi Profesional</li>
+      <li>Perawatan & Service</li>
+      <li>Konsultasi Gratis</li>
+      <li>Garansi Produk</li>
+    </ul>
+  </div>
+
+  <!-- JAM OPERASIONAL -->
+  <div>
+    <h4>Jam Operasional</h4>
+    <p>Senin - Sabtu: 09:00 - 17:00</p>
+    <p>Minggu: Libur</p>
+  </div>
+
+  <!-- GAMBAR FOOTHER -->
+  <div class="footer-image">
+    <img
+      src="Assets\img\Enjoy AHK.png"
+      alt="Air Hangat Kita"
+    />
+  </div>
+
+</div>
+        </div>
+        <div class="copyright">
+          © 2026 Air Hangat Kita (CV. Putra Kita). All rights reserved.
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("navbar").classList.toggle("open");
+      }
+
+      document
+        .querySelectorAll(".nav-links a")
+        .forEach((link) =>
+          link.addEventListener("click", () =>
+            document.getElementById("navbar").classList.remove("open"),
+          ),
+        );
+
+      // FORM KONTAK → WHATSAPP
+      document.querySelectorAll("form.contact-form").forEach((form) => {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Mengambil data dari form
+          const nama = document.getElementById("nama").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const telepon = document.getElementById("telepon").value.trim();
+          const pesan = document.getElementById("pesan").value.trim();
+
+          // Nomor WhatsApp Air Hangat Kita
+          const nomorWhatsApp = "6282312085979";
+
+          // Membuat pesan WhatsApp
+          const teksPesan =
+            "Halo Air Hangat Kita,\n\n" +
+            "Saya ingin berkonsultasi mengenai produk.\n\n" +
+            "Nama: " +
+            nama +
+            "\n" +
+            "Email: " +
+            email +
+            "\n" +
+            "No. WhatsApp: " +
+            telepon +
+            "\n\n" +
+            "Pesan:\n" +
+            pesan;
+
+          // Membuat link WhatsApp
+          const urlWhatsApp =
+            "https://wa.me/" +
+            nomorWhatsApp +
+            "?text=" +
+            encodeURIComponent(teksPesan);
+
+          // Membuka WhatsApp
+          window.open(urlWhatsApp, "_blank");
+
+          // Alert
+          alert(
+            "Terima kasih! Pesan Anda telah dikirim. Tim kami akan menghubungi Anda segera.",
+          );
+
+          // Mengosongkan form
+          this.reset();
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1067 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Katalog Harga Water Heater Listrik | Air Hangat Kita</title>
+
+    <style>
+      /* =====================================================
+         VARIABEL WARNA
+      ===================================================== */
+      :root {
+        --green-dark: #004b1b;
+        --green: #07852f;
+        --green-2: #12a13c;
+        --green-soft: #eef8e9;
+
+        --yellow: #ffd600;
+        --yellow-soft: #fff7cf;
+
+        --orange-soft: #fff0e6;
+        --cream: #f8fbef;
+
+        --text: #111111;
+        --muted: #666666;
+
+        --border: #e4e8df;
+        --white: #ffffff;
+
+        --shadow: 0 8px 24px rgba(0, 65, 24, 0.08);
+        --radius: 18px;
+      }
+
+      /* =====================================================
+         RESET
+      ===================================================== */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--cream);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      .container {
+        width: min(1200px, calc(100% - 40px));
+        margin: auto;
+      }
+
+      /* =====================================================
+         NAVBAR
+      ===================================================== */
+      .navbar {
+        width: 100%;
+        background: var(--green-dark);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 3px 12px rgba(0, 65, 24, 0.12);
+      }
+
+      .navbar-container {
+        width: min(1200px, calc(100% - 40px));
+        min-height: 78px;
+        margin: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+      }
+
+      /* LOGO + BRAND */
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--white);
+        flex-shrink: 0;
+      }
+
+      .brand img {
+        width: 58px;
+        height: 58px;
+        object-fit: contain;
+      }
+
+      .brand-text {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.2;
+      }
+
+      .brand-name {
+        font-size: 20px;
+        font-weight: 800;
+      }
+
+      .brand-tagline {
+        font-size: 11px;
+        color: var(--yellow-soft);
+        margin-top: 3px;
+      }
+
+      /* MENU */
+      .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .nav-menu a {
+        color: var(--white);
+        padding: 10px 18px;
+        border-radius: 50px;
+
+        font-size: 14px;
+        font-weight: 700;
+
+        border: 1px solid transparent;
+        transition: 0.25s ease;
+      }
+
+      .nav-menu a:hover {
+        background: var(--yellow);
+        color: var(--text);
+      }
+
+      .nav-menu a.active {
+        background: var(--yellow);
+        color: var(--text);
+      }
+
+      /* =====================================================
+         HERO
+      ===================================================== */
+      .hero {
+        padding: 55px 20px;
+        background: linear-gradient(
+          135deg,
+          var(--green-soft),
+          var(--white),
+          var(--yellow-soft)
+        );
+      }
+
+      .hero-box {
+        width: min(1200px, 100%);
+        margin: auto;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 45px;
+        align-items: center;
+      }
+
+      /* GAMBAR */
+      .hero-image {
+        order: 1;
+        background: var(--white);
+        padding: 25px;
+
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+
+        min-height: 360px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hero-image img {
+        width: 100%;
+        height: 330px;
+        object-fit: contain;
+      }
+
+      /* INFORMASI */
+      .hero-content {
+        order: 2;
+      }
+
+      .hero-label {
+        display: inline-block;
+
+        background: var(--yellow-soft);
+        color: var(--green-dark);
+
+        padding: 8px 15px;
+        border-radius: 50px;
+
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 1px;
+
+        margin-bottom: 15px;
+      }
+
+      .hero-content h1 {
+        color: var(--green-dark);
+        font-size: clamp(32px, 5vw, 52px);
+        line-height: 1.1;
+        font-weight: 800;
+      }
+
+      .hero-content h1 span {
+        color: var(--green);
+      }
+
+      .hero-content p {
+        max-width: 600px;
+        margin-top: 18px;
+
+        color: var(--muted);
+        font-size: 17px;
+        line-height: 1.8;
+      }
+
+      .hero-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 22px;
+      }
+
+      .hero-tags span {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 50px;
+
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .tag-green {
+        background: var(--green-soft);
+        color: var(--green);
+      }
+
+      .tag-yellow {
+        background: var(--yellow-soft);
+        color: var(--green-dark);
+      }
+
+      .tag-orange {
+        background: var(--orange-soft);
+        color: var(--green-dark);
+      }
+
+      /* =====================================================
+         CONTENT
+      ===================================================== */
+      .content {
+        width: min(1200px, calc(100% - 40px));
+        margin: auto;
+        padding: 60px 0;
+      }
+
+      .section-heading {
+        margin-bottom: 22px;
+      }
+
+      .section-heading h2 {
+        color: var(--green-dark);
+        font-size: 28px;
+        font-weight: 800;
+      }
+
+      .section-heading p {
+        color: var(--muted);
+        margin-top: 5px;
+      }
+
+      /* =====================================================
+         TABLE CARD
+      ===================================================== */
+      .table-card {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+
+        box-shadow: var(--shadow);
+        overflow: hidden;
+
+        margin-bottom: 55px;
+      }
+
+      .table-title {
+        background: var(--green);
+        color: var(--white);
+
+        padding: 18px 22px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+      }
+
+      .table-title.green {
+        background: var(--green-2);
+      }
+
+      .table-title h3 {
+        font-size: 20px;
+        font-weight: 800;
+      }
+
+      .table-title span {
+        font-size: 13px;
+        opacity: 0.95;
+      }
+
+      .table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 700px;
+        font-size: 14px;
+      }
+
+      thead {
+        background: var(--green-dark);
+        color: var(--white);
+      }
+
+      th {
+        padding: 15px;
+        text-align: left;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      td {
+        padding: 13px 15px;
+        border-bottom: 1px solid var(--border);
+        color: var(--text);
+      }
+
+      tbody tr:nth-child(even) {
+        background: var(--green-soft);
+      }
+
+      tbody tr:hover {
+        background: var(--yellow-soft);
+        transition: 0.2s ease;
+      }
+
+      tbody tr:last-child td {
+        border-bottom: none;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      /* =====================================================
+         INFO BOX
+      ===================================================== */
+      .info-box {
+        background: var(--green-soft);
+        border: 1px solid var(--border);
+        border-left: 5px solid var(--green);
+
+        border-radius: var(--radius);
+        padding: 25px;
+        margin-top: 10px;
+        margin-bottom: 55px;
+      }
+
+      .info-box h3 {
+        color: var(--green-dark);
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+
+      .info-box p {
+        color: var(--muted);
+      }
+
+      /* =====================================================
+         CTA
+      ===================================================== */
+      .cta-section {
+        padding: 0 20px 70px;
+      }
+
+      .cta {
+        width: min(1200px, 100%);
+        margin: auto;
+
+        background: var(--green-dark);
+        color: var(--white);
+
+        border-radius: var(--radius);
+        padding: 40px;
+
+        box-shadow: var(--shadow);
+      }
+
+      .cta-label {
+        display: inline-block;
+
+        background: var(--yellow);
+        color: var(--green-dark);
+
+        padding: 7px 14px;
+        border-radius: 50px;
+
+        font-size: 11px;
+        font-weight: 800;
+
+        margin-bottom: 15px;
+      }
+
+      .cta h2 {
+        font-size: 29px;
+        margin-bottom: 10px;
+      }
+
+      .cta p {
+        color: var(--yellow-soft);
+        max-width: 700px;
+        margin-bottom: 22px;
+      }
+
+      .cta-button {
+        display: inline-block;
+
+        background: var(--yellow);
+        color: var(--green-dark);
+
+        padding: 12px 22px;
+        border-radius: 50px;
+
+        font-weight: 800;
+        font-size: 14px;
+
+        transition: 0.25s ease;
+      }
+
+      .cta-button:hover {
+        background: var(--yellow-soft);
+        transform: translateY(-2px);
+      }
+
+      /* =====================================================
+         FOOTER
+      ===================================================== */
+      .footer {
+        background: var(--green-dark);
+        color: var(--white);
+        padding: 35px 20px;
+      }
+
+      .footer-content {
+        width: min(1200px, 100%);
+        margin: auto;
+
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+      }
+
+      .footer h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+
+      .footer p {
+        color: var(--yellow-soft);
+        font-size: 13px;
+      }
+
+      .footer-right {
+        text-align: right;
+      }
+
+      /* =====================================================
+         TABLET
+      ===================================================== */
+      @media (max-width: 768px) {
+        .navbar-container {
+          min-height: auto;
+          padding: 12px 0;
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .brand img {
+          width: 55px;
+          height: 55px;
+        }
+
+        .nav-menu {
+          width: 100%;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        .nav-menu a {
+          padding: 9px 15px;
+        }
+
+        .hero {
+          padding: 40px 20px;
+        }
+
+        .hero-box {
+          grid-template-columns: 1fr;
+          gap: 25px;
+        }
+
+        .hero-image {
+          order: 1;
+          min-height: 300px;
+        }
+
+        .hero-content {
+          order: 2;
+        }
+
+        .hero-image img {
+          height: 280px;
+        }
+
+        .content {
+          padding-top: 45px;
+        }
+
+        .section-heading h2 {
+          font-size: 24px;
+        }
+
+        .footer-content {
+          flex-direction: column;
+        }
+
+        .footer-right {
+          text-align: left;
+        }
+      }
+
+      /* =====================================================
+         HP
+      ===================================================== */
+      @media (max-width: 480px) {
+        .container,
+        .content {
+          width: min(100% - 24px, 1200px);
+        }
+
+        .navbar-container {
+          width: calc(100% - 24px);
+        }
+
+        .brand {
+          width: 100%;
+          justify-content: center;
+        }
+
+        .brand img {
+          width: 48px;
+          height: 48px;
+        }
+
+        .brand-name {
+          font-size: 18px;
+        }
+
+        .brand-tagline {
+          font-size: 10px;
+        }
+
+        .nav-menu {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          width: 100%;
+          gap: 6px;
+        }
+
+        .nav-menu a {
+          text-align: center;
+          padding: 9px 5px;
+          font-size: 13px;
+        }
+
+        .hero {
+          padding: 30px 12px;
+        }
+
+        .hero-content h1 {
+          font-size: 34px;
+        }
+
+        .hero-content p {
+          font-size: 14px;
+          line-height: 1.7;
+        }
+
+        .hero-image {
+          min-height: 230px;
+          padding: 15px;
+        }
+
+        .hero-image img {
+          height: 220px;
+        }
+
+        .hero-tags span {
+          font-size: 11px;
+        }
+
+        .content {
+          width: calc(100% - 24px);
+          padding: 40px 0;
+        }
+
+        .section-heading h2 {
+          font-size: 21px;
+        }
+
+        .section-heading p {
+          font-size: 13px;
+        }
+
+        .table-title {
+          padding: 15px;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .table-title h3 {
+          font-size: 18px;
+        }
+
+        table {
+          font-size: 12px;
+        }
+
+        th,
+        td {
+          padding: 11px 12px;
+        }
+
+        .info-box {
+          padding: 18px;
+        }
+
+        .cta {
+          padding: 25px 20px;
+        }
+
+        .cta h2 {
+          font-size: 23px;
+        }
+
+        .cta p {
+          font-size: 13px;
+        }
+
+        .footer {
+          padding: 28px 15px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- =====================================================
+         NAVBAR
+    ===================================================== -->
+    <header class="navbar">
+      <div class="navbar-container">
+        <a href="index.html" class="brand">
+          <img src="assets/img/logo-AHK.png" alt="Logo Air Hangat Kita" />
+
+          <div class="brand-text">
+            <span class="brand-name">Air Hangat Kita</span>
+            <span class="brand-tagline"> Solusi Water Heater Terpercaya </span>
+          </div>
+        </a>
+
+        <nav class="nav-menu">
+          <a href="index.html">Home</a>
+          <a href="katalog.html" class="active">Katalog</a>
+          <a href="index.html">Kembali</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- =====================================================
+         HERO
+    ===================================================== -->
+    <section class="hero">
+      <div class="hero-box">
+        <div class="hero-image">
+          <img src="Assets/img/WATER HEATER.png" alt="Water Heater Listrik" />
+        </div>
+
+        <div class="hero-content">
+          <span class="hero-label"> KATALOG PRODUK </span>
+
+          <h1>
+            Water Heater
+            <span>Listrik</span>
+          </h1>
+
+          <p>
+            Pilihan water heater listrik dengan berbagai kapasitas yang dapat
+            disesuaikan dengan kebutuhan penggunaan air panas Anda.
+          </p>
+
+          <div class="hero-tags">
+            <span class="tag-green">#Hemat Energi</span>
+            <span class="tag-yellow">#Berbagai Kapasitas</span>
+            <span class="tag-orange">#Praktis</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         CONTENT
+    ===================================================== -->
+    <main class="content">
+      <!-- HE10 & HE15 -->
+      <div class="section-heading">
+        <h2>Spesifikasi Teknis HE10-GC & HE15-GC</h2>
+        <p>Detail spesifikasi water heater listrik.</p>
+      </div>
+
+      <div class="table-card">
+        <div class="table-title">
+          <h3>HE10-GC & HE15-GC</h3>
+          <span>Water Heater Listrik</span>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Specification</th>
+                <th class="center">HE10-GC</th>
+                <th class="center">HE15-GC</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Capacity</td>
+                <td class="center">10L</td>
+                <td class="center">15L</td>
+              </tr>
+
+              <tr>
+                <td>Dimension</td>
+                <td class="center">345 x 345 x 301 (mm)</td>
+                <td class="center">385 x 385 x 316 (mm)</td>
+              </tr>
+
+              <tr>
+                <td>Weight</td>
+                <td class="center">7.7 Kg</td>
+                <td class="center">9.3 Kg</td>
+              </tr>
+
+              <tr>
+                <td>Voltage</td>
+                <td class="center">220-240 V</td>
+                <td class="center">220-240 V</td>
+              </tr>
+
+              <tr>
+                <td>Power</td>
+                <td class="center">250 Watt</td>
+                <td class="center">350 Watt</td>
+              </tr>
+
+              <tr>
+                <td>Adjustable Water Temp</td>
+                <td class="center">Ambient to 75 °C</td>
+                <td class="center">Ambient to 75 °C</td>
+              </tr>
+
+              <tr>
+                <td>Rate Pressure</td>
+                <td class="center">0.8 Mpa</td>
+                <td class="center">0.8 MPa</td>
+              </tr>
+
+              <tr>
+                <td>Water Proof Degree</td>
+                <td class="center">IPx4</td>
+                <td class="center">IPx4</td>
+              </tr>
+
+              <tr>
+                <td>Packing Size</td>
+                <td class="center">420 x 410 x 395 (mm)</td>
+                <td class="center">460 x 440 x 390 (mm)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- HE30 & HE50 -->
+      <div class="section-heading">
+        <h2>Spesifikasi Teknis HE30-ET & HE50-ET</h2>
+        <p>Detail spesifikasi water heater listrik.</p>
+      </div>
+
+      <div class="table-card">
+        <div class="table-title" style="background: var(--green-2)">
+          <h3>HE30-ET & HE50-ET</h3>
+          <span>Water Heater Listrik</span>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Specification</th>
+                <th class="center">HE30-ET</th>
+                <th class="center">HE50-ET</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Capacity</td>
+                <td class="center">30L</td>
+                <td class="center">50L</td>
+              </tr>
+
+              <tr>
+                <td>Dimension</td>
+                <td class="center">700 x 440 x 250 (mm)</td>
+                <td class="center">800 x 515 x 290 (mm)</td>
+              </tr>
+
+              <tr>
+                <td>Weight</td>
+                <td class="center">22 Kg</td>
+                <td class="center">24 Kg</td>
+              </tr>
+
+              <tr>
+                <td>Voltage</td>
+                <td class="center">220V, 50Hz</td>
+                <td class="center">220V, 50Hz</td>
+              </tr>
+
+              <tr>
+                <td>Power</td>
+                <td class="center">350/1000/1350 Watt</td>
+                <td class="center">350/1000/1350 Watt</td>
+              </tr>
+
+              <tr>
+                <td>Adjustable Water Temp</td>
+                <td class="center">Ambient to 75 °C</td>
+                <td class="center">Ambient to 75 °C</td>
+              </tr>
+
+              <tr>
+                <td>Rate Pressure</td>
+                <td class="center">0.75 Mpa</td>
+                <td class="center">0.75 MPa</td>
+              </tr>
+
+              <tr>
+                <td>Water Proof Degree</td>
+                <td class="center">IPx4</td>
+                <td class="center">IPx4</td>
+              </tr>
+
+              <tr>
+                <td>Packing Size</td>
+                <td class="center">835 x 325 x 510 (mm)</td>
+                <td class="center">960 x 365 x 585 (mm)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- HE30 - HE100 -->
+      <div class="section-heading">
+        <h2>Spesifikasi Teknis HE30-GC – HE100-GC</h2>
+        <p>Detail spesifikasi water heater listrik berbagai kapasitas.</p>
+      </div>
+
+      <div class="table-card">
+        <div class="table-title" style="background: var(--green-dark)">
+          <h3>HE30-GC – HE100-GC</h3>
+          <span>Water Heater Listrik</span>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Specification</th>
+                <th class="center">HE30-GC</th>
+                <th class="center">HE50-GC</th>
+                <th class="center">HE80-GC</th>
+                <th class="center">HE100-GC</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Capacity</td>
+                <td class="center">30L</td>
+                <td class="center">50L</td>
+                <td class="center">80L</td>
+                <td class="center">100L</td>
+              </tr>
+
+              <tr>
+                <td>Dimension</td>
+                <td class="center">410 x 410 x 480 (mm)</td>
+                <td class="center">410 x 410 x 620 (mm)</td>
+                <td class="center">410 x 410 x 880 (mm)</td>
+                <td class="center">495 x 465 x 1050 (mm)</td>
+              </tr>
+
+              <tr>
+                <td>Weight</td>
+                <td class="center">13.2 Kg</td>
+                <td class="center">17.4 Kg</td>
+                <td class="center">22.8 Kg</td>
+                <td class="center">25.7 Kg</td>
+              </tr>
+
+              <tr>
+                <td>Voltage</td>
+                <td class="center">220 V</td>
+                <td class="center">220 V</td>
+                <td class="center">220 V</td>
+                <td class="center">220 V</td>
+              </tr>
+
+              <tr>
+                <td>Power</td>
+                <td class="center">500 Watt</td>
+                <td class="center">500 Watt</td>
+                <td class="center">1000 Watt</td>
+                <td class="center">1500 Watt</td>
+              </tr>
+
+              <tr>
+                <td>Adjustable Water Temp</td>
+                <td class="center">Ambient to 75 °C</td>
+                <td class="center">Ambient to 75 °C</td>
+                <td class="center">Ambient to 75 °C</td>
+                <td class="center">Ambient to 75 °C</td>
+              </tr>
+
+              <tr>
+                <td>Rate Pressure</td>
+                <td class="center">0.8 Mpa</td>
+                <td class="center">0.8 MPa</td>
+                <td class="center">0.8 Mpa</td>
+                <td class="center">0.8 MPa</td>
+              </tr>
+
+              <tr>
+                <td>Empty Weight</td>
+                <td class="center">13.2 Kg</td>
+                <td class="center">17.4 Kg</td>
+                <td class="center">22.8 Kg</td>
+                <td class="center">25.7 Kg</td>
+              </tr>
+
+              <tr>
+                <td>Packing Size</td>
+                <td class="center">495 x 465 x 770 (mm)</td>
+                <td class="center">495 x 465 x 770 (mm)</td>
+                <td class="center">495 x 465 x 1200 (mm)</td>
+                <td class="center">495 x 465 x 1200 (mm)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- INFO -->
+      <div class="info-box">
+        <h3>Informasi Produk</h3>
+
+        <p>
+          Pilih kapasitas water heater sesuai jumlah pengguna dan kebutuhan air
+          panas Anda. Untuk informasi harga, ketersediaan, instalasi, dan
+          konsultasi kebutuhan, silakan menghubungi Customer Service Air Hangat
+          Kita.
+        </p>
+      </div>
+    </main>
+
+    <!-- =====================================================
+         CTA
+    ===================================================== -->
+    <section class="cta-section">
+      <div class="cta">
+        <span class="cta-label"> BUTUH INFORMASI? </span>
+
+        <h2>Ingin Mengetahui Produk yang Sesuai?</h2>
+
+        <p>
+          Pilih kapasitas water heater berdasarkan jumlah pengguna dan kebutuhan
+          air panas di rumah atau bisnis Anda.
+        </p>
+
+        <a href="index.html#contact" class="cta-button"> Hubungi Kami </a>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         FOOTER
+    ===================================================== -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div>
+          <h3>Air Hangat Kita</h3>
+
+          <p>
+            Solusi water heater terpercaya untuk kebutuhan rumah dan bisnis
+            Anda.
+          </p>
+        </div>
+
+        <div class="footer-right">
+          <p>© 2026 Air Hangat Kita</p>
+          <p>All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

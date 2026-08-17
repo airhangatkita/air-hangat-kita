@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Perawatan Water Heater | Air Hangat Kita</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <style>
+    /* =========================================
+   HEADER
+   ========================================= */
+
+    .site-header {
+      width: 100%;
+      background: #f8fbef;
+      padding: 8px 0;
+    }
+
+    .header-content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0 10px;
+    }
+
+    /* LOGO */
+
+    .logo {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 100px !important;
+      height: 100px !important;
+      object-fit: contain;
+    }
+
+    /* BRAND */
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 30px;
+      line-height: 1.1;
+      font-weight: 700;
+      color: #050505;
+    }
+
+    .brand p {
+      margin: 2px 0 0;
+      font-size: 12px;
+      line-height: 1.3;
+      color: #111;
+    }
+
+    /* =========================================
+   NAVBAR
+   ========================================= */
+
+    .navbar {
+      width: 100%;
+      background: #07852f;
+      padding: 0;
+    }
+
+    .nav-content {
+      width: 100%;
+      display: flex;
+      align-items: stretch;
+    }
+
+    /* TOMBOL MENU */
+
+    .nav-content a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 40px;
+      padding: 0 18px;
+
+      color: #ffffff;
+      text-decoration: none;
+
+      font-size: 16px;
+      font-weight: 550;
+
+      border-right: 1px solid rgba(255, 255, 255, 0.15);
+
+      transition: all 0.2s ease;
+    }
+
+    /* MENU AKTIF */
+
+    .nav-content a.active {
+      background: #ffd600;
+      color: #ffffff;
+      border-radius: 50px;
+    }
+
+    /* HOVER */
+
+    .nav-content a:hover {
+      background: #ffd600;
+      color: #000000;
+      border-radius: 50px;
+    }
+
+    /* =========================================
+   TABLET
+   ========================================= */
+
+    @media (max-width: 768px) {
+      .header-content {
+        padding: 15px 20px;
+        gap: 15px;
+      }
+
+      .logo img {
+        width: 50px !important;
+        height: 50px !important;
+      }
+
+      .brand h1 {
+        font-size: 34px;
+      }
+
+      .brand p {
+        font-size: 16px;
+      }
+
+      .nav-content {
+        flex-wrap: wrap;
+      }
+
+      .nav-content a {
+        min-height: 50px;
+        padding: 0 14px;
+        font-size: 15px;
+      }
+    }
+
+    /* =========================================
+   HP
+   ========================================= */
+
+    @media (max-width: 480px) {
+      .site-header {
+        padding: 15px 0;
+      }
+
+      .header-content {
+        padding: 0 15px;
+        gap: 10px;
+      }
+
+      .logo img {
+        width: 48px;
+        height: 48px;
+      }
+
+      .brand h1 {
+        font-size: 27px;
+      }
+
+      .brand p {
+        font-size: 13px;
+        line-height: 1.3;
+      }
+
+      /* NAVBAR MENJADI GRID */
+
+      .nav-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+      }
+
+      .nav-content a {
+        min-height: 48px;
+        padding: 8px 5px;
+
+        font-size: 13px;
+        text-align: center;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      }
+    }
+    /* =================================
+   TEKS BERJALAN DI BAWAH NAVBAR
+   BERLAKU UNTUK SEMUA DEVICE
+================================= */
+
+    .running-text {
+      width: 100%;
+      height: 40px;
+
+      background: none;
+      color: #004b1b;
+
+      overflow: hidden;
+      position: relative;
+
+      display: flex;
+      align-items: center;
+    }
+
+    .running-text-content {
+      position: absolute;
+      left: 100%;
+
+      white-space: nowrap;
+
+      font-size: 17px;
+      font-weight: 600;
+
+      animation: teksBerjalan 20s linear infinite;
+    }
+
+    @keyframes teksBerjalan {
+      from {
+        left: 100%;
+      }
+
+      to {
+        left: -100%;
+      }
+    }
+  </style>
+
+  <body>
+    <!-- HEADER -->
+    <div class="header-content">
+      <div class="logo">
+        <img src="Assets/img/AHK-png.png" alt="Logo Air Hangat Kita" />
+      </div>
+
+      <div class="brand">
+        <h1>Air Hangat Kita</h1>
+        <p>Solusi Water Heater Terpercaya untuk Keluarga Anda</p>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="container nav-content">
+        <a href="index.html"> Beranda </a>
+
+        <a href="carakerja.html"> Cara Kerja Water Heater </a>
+
+        <a href="tips.html"> Tips Efisien </a>
+
+        <a href="perawatan.html" class="active"> Perawatan </a>
+      </div>
+    </nav>
+
+    <!-- TEKS BERJALAN -->
+    <div class="running-text">
+      <div class="running-text-content">
+        Air Hangat Kita &nbsp; • &nbsp; Solusi Water Heater Terpercaya &nbsp; •
+        &nbsp; Hangatnya Nyaman, Setiap Hari
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <main class="artikel">
+      <!-- HERO ARTIKEL -->
+      <section class="article-hero">
+        <div class="container">
+          <span class="article-label"> ARTIKEL </span>
+
+          <h2>Perawatan Water Heater</h2>
+
+          <p>
+            Panduan perawatan water heater agar tetap aman, efisien, dan
+            memiliki umur penggunaan yang lebih panjang.
+          </p>
+        </div>
+      </section>
+
+      <!-- ARTICLE CONTENT -->
+      <section class="article-content">
+        <div class="container">
+          <!-- INTRO -->
+          <div class="article-intro">
+            <p>
+              Merawat water heater dengan baik sangat penting agar perangkat
+              memiliki umur penggunaan yang panjang, tetap efisien dalam
+              penggunaan energi, dan aman digunakan sehari-hari.
+            </p>
+
+            <p>
+              Cara pemeliharaan dapat berbeda tergantung pada jenis water heater
+              yang digunakan. Berikut panduan pemeliharaan untuk water heater
+              listrik, gas, dan tenaga surya.
+            </p>
+          </div>
+
+          <!-- WATER HEATER LISTRIK -->
+          <article class="article-section">
+            <div class="section-number">01</div>
+
+            <div class="section-body">
+              <h3>Pemeliharaan Water Heater Listrik</h3>
+
+              <p>
+                Water heater listrik membutuhkan pemeriksaan berkala pada elemen
+                pemanas, tangki, thermostat, dan sistem pengaman agar dapat
+                bekerja secara optimal.
+              </p>
+
+              <h4>Tips Pemeliharaan</h4>
+
+              <ol>
+                <li>
+                  <strong>Matikan Saat Tidak Digunakan</strong>
+
+                  <br />
+
+                  Matikan water heater setelah digunakan, terutama jika tidak
+                  dipakai selama beberapa hari. Hal ini dapat membantu menghemat
+                  listrik dan mengurangi beban kerja elemen pemanas.
+                </li>
+
+                <li>
+                  <strong>Periksa Elemen Pemanas</strong>
+
+                  <br />
+
+                  Bersihkan elemen pemanas dari kerak seperti kalsium atau
+                  magnesium setiap 6–12 bulan, terutama jika air di rumah
+                  tergolong keras.
+                </li>
+
+                <li>
+                  <strong>Periksa Thermostat</strong>
+
+                  <br />
+
+                  Pastikan suhu diatur pada kisaran yang sesuai. Suhu yang
+                  terlalu tinggi dapat meningkatkan konsumsi energi dan berisiko
+                  menyebabkan luka akibat air panas.
+                </li>
+
+                <li>
+                  <strong>Kuras Tangki Secara Berkala</strong>
+
+                  <br />
+
+                  Kuras tangki sekitar 1–2 kali dalam setahun untuk membantu
+                  menghilangkan endapan lumpur dan kotoran yang dapat mengganggu
+                  kinerja perangkat.
+                </li>
+
+                <li>
+                  <strong>Cek Katup Pengaman</strong>
+
+                  <br />
+
+                  Pastikan pressure relief valve atau katup pengaman dapat
+                  bekerja dengan baik untuk membantu mengendalikan tekanan
+                  berlebih di dalam sistem.
+                </li>
+              </ol>
+
+              <div class="info-box">
+                <strong> Perhatian </strong>
+
+                <p>
+                  Sebelum melakukan pemeriksaan pada komponen listrik, pastikan
+                  sumber listrik telah dimatikan. Untuk pemeriksaan yang lebih
+                  kompleks, gunakan bantuan teknisi profesional.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- WATER HEATER GAS -->
+          <article class="article-section">
+            <div class="section-number">02</div>
+
+            <div class="section-body">
+              <h3>Pemeliharaan Water Heater Gas</h3>
+
+              <p>
+                Water heater gas memerlukan perhatian khusus karena melibatkan
+                sistem pembakaran dan saluran gas. Pemeriksaan rutin penting
+                untuk menjaga keamanan dan efisiensi perangkat.
+              </p>
+
+              <h4>Tips Pemeliharaan</h4>
+
+              <ol>
+                <li>
+                  <strong> Cek Ventilasi dan Saluran Gas </strong>
+
+                  <br />
+
+                  Pastikan tidak terdapat kebocoran gas dan sistem ventilasi
+                  berfungsi dengan baik. Bau gas atau suara mendesis dapat
+                  menjadi tanda adanya masalah yang perlu segera diperiksa.
+                </li>
+
+                <li>
+                  <strong> Bersihkan Burner dan Pilot Light </strong>
+
+                  <br />
+
+                  Bersihkan burner dan pilot light secara berkala agar
+                  pembakaran tetap berjalan dengan baik. Api yang tidak normal
+                  dapat menunjukkan adanya masalah pada proses pembakaran.
+                </li>
+
+                <li>
+                  <strong> Periksa Termokopel </strong>
+
+                  <br />
+
+                  Termokopel berfungsi sebagai sensor pengaman yang membantu
+                  menghentikan aliran gas ketika pilot mati. Komponen yang sudah
+                  aus sebaiknya diperiksa atau diganti oleh teknisi.
+                </li>
+
+                <li>
+                  <strong> Cek dan Bersihkan Tangki </strong>
+
+                  <br />
+
+                  Tangki perlu diperiksa dan dibersihkan secara berkala untuk
+                  membantu mengurangi endapan yang dapat memengaruhi kinerja
+                  water heater.
+                </li>
+
+                <li>
+                  <strong> Pasang Detektor Gas </strong>
+
+                  <br />
+
+                  Penggunaan detektor gas dapat menjadi langkah tambahan untuk
+                  membantu mendeteksi kebocoran gas lebih awal.
+                </li>
+              </ol>
+
+              <div class="info-box highlight">
+                <strong> Utamakan Keselamatan </strong>
+
+                <p>
+                  Jika tercium bau gas, segera hentikan penggunaan perangkat,
+                  hindari sumber api atau percikan listrik, dan mintalah bantuan
+                  teknisi yang kompeten untuk melakukan pemeriksaan.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- SOLAR WATER HEATER -->
+          <article class="article-section">
+            <div class="section-number">03</div>
+
+            <div class="section-body">
+              <h3>Pemeliharaan Water Heater Tenaga Surya</h3>
+
+              <p>
+                Solar water heater memanfaatkan energi matahari untuk memanaskan
+                air. Agar penyerapan panas tetap optimal, kolektor surya, pipa,
+                tangki, dan sistem sirkulasi perlu diperiksa secara berkala.
+              </p>
+
+              <h4>Tips Pemeliharaan</h4>
+
+              <ol>
+                <li>
+                  <strong> Periksa Kolektor Surya </strong>
+
+                  <br />
+
+                  Bersihkan permukaan kolektor dari debu, daun, dan kotoran
+                  secara berkala agar sinar matahari dapat diterima dengan
+                  optimal.
+                </li>
+
+                <li>
+                  <strong> Periksa Pipa dan Isolasi </strong>
+
+                  <br />
+
+                  Periksa kemungkinan kebocoran atau kerusakan pada pipa.
+                  Pastikan isolasi pipa masih dalam kondisi baik agar panas
+                  tidak mudah hilang.
+                </li>
+
+                <li>
+                  <strong> Kuras Tangki </strong>
+
+                  <br />
+
+                  Kuras tangki sekitar setiap 6–12 bulan, terutama apabila
+                  terdapat banyak endapan dari air yang digunakan.
+                </li>
+
+                <li>
+                  <strong> Cek Cairan Antibeku </strong>
+
+                  <br />
+
+                  Pada sistem tertutup yang menggunakan antifreeze atau glycol,
+                  periksa kondisi dan level cairan secara berkala sesuai
+                  rekomendasi sistem.
+                </li>
+
+                <li>
+                  <strong> Periksa Pompa Sirkulasi </strong>
+
+                  <br />
+
+                  Pada sistem aktif, pastikan pompa sirkulasi berjalan dengan
+                  baik dan tidak menghasilkan suara atau getaran yang tidak
+                  normal.
+                </li>
+              </ol>
+
+              <div class="info-box">
+                <strong> Perawatan Kolektor Surya </strong>
+
+                <p>
+                  Kolektor surya yang bersih membantu menjaga proses penyerapan
+                  energi matahari agar tetap optimal, terutama pada daerah
+                  dengan banyak debu atau kotoran di udara.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- TIPS UMUM -->
+          <section class="comparison-section">
+            <div class="comparison-header">
+              <span class="article-label"> TIPS PERAWATAN </span>
+
+              <h3>Tips Umum untuk Semua Jenis Water Heater</h3>
+
+              <p>
+                Beberapa kebiasaan sederhana dapat membantu menjaga performa
+                water heater dalam jangka panjang.
+              </p>
+            </div>
+
+            <div class="sub-section">
+              <ol>
+                <li>
+                  Gunakan air yang bersih atau pertimbangkan penggunaan filter
+                  air untuk mengurangi endapan.
+                </li>
+
+                <li>
+                  Lakukan pemeriksaan dan servis secara berkala menggunakan
+                  teknisi yang kompeten.
+                </li>
+
+                <li>
+                  Catat tanggal servis terakhir agar jadwal pemeliharaan
+                  berikutnya lebih mudah dipantau.
+                </li>
+
+                <li>
+                  Segera periksa perangkat apabila muncul suara, bau, kebocoran,
+                  atau kondisi kerja yang tidak normal.
+                </li>
+
+                <li>
+                  Ikuti petunjuk penggunaan dan pemeliharaan yang diberikan oleh
+                  produsen perangkat.
+                </li>
+              </ol>
+            </div>
+
+            <div class="info-box highlight">
+              <strong> Perawatan Rutin = Performa Lebih Optimal </strong>
+
+              <p>
+                Pemeliharaan secara rutin tidak hanya membantu memperpanjang
+                usia water heater, tetapi juga membantu menjaga efisiensi energi
+                dan keamanan selama perangkat digunakan.
+              </p>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <h3>Air Hangat Kita</h3>
+
+          <p>
+            Solusi water heater terpercaya untuk kebutuhan rumah dan bisnis
+            Anda.
+          </p>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Air Hangat Kita. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
